@@ -12,22 +12,14 @@ static const char alphanum[] =
 
 int stringLength = sizeof(alphanum) - 1;
 
-char genRandom()  // Random string generator function.
-{
-    return alphanum[rand() % stringLength];
-}
-
 int main()
 {
     srand(time(0));
-    string password = "";
 
     for(int z=0; z < 21; z++)
     {
-       password += genRandom();
+       cout << alphanum[rand() % stringLength];;
     }
-
-    cout << password;
 
     return 0;
 
