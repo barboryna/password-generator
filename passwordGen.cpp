@@ -22,7 +22,7 @@ int main()
     srand(time(0));
     string password = "";
 
-    for(int z=0; z < 8; z++)
+    for(int z=0; z < 21; z++)
     {
        password += genRandom();
     }
